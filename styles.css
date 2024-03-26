@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 400px;
+    gap: 0;
+    border: none;
+}
+
+div {
+    color: black;
+    border: solid;
+    width: 25px;
+    height: 25px;
+}
