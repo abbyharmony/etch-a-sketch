@@ -40,3 +40,7 @@ div {
 div:hover {
     background-color: red;
 }
+
+.permahover {
+    background-color: red;
+}
