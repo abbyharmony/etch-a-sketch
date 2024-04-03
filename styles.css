@@ -6,14 +6,24 @@ body {
 }
   
 header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
     font-family: "Londrina Outline", sans-serif;
     font-weight: 600;
     font-style: normal;
     font-size: 60px;
+}
+
+p {
     color: greenyellow;
-    display: flex;
-    justify-content: center;
-    padding: 25px;
+}
+
+#reset {
+    width: 100px;
+    height: 50px;
 }
 
 .container {
@@ -32,8 +42,6 @@ div {
     border-radius: 3px;
     border: 1px solid red;
     color: black;
-    width: 45px;
-    height: 45px;
     background-color: #4946f2;
 }
 
@@ -44,3 +52,4 @@ div:hover {
 .permahover {
     background-color: red;
 }
+
