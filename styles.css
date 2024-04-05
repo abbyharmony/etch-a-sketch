@@ -19,9 +19,15 @@ header {
 
 p {
     color: greenyellow;
+    margin: 0;
 }
 
 #reset {
+    width: 100px;
+    height: 50px;
+}
+
+#random {
     width: 100px;
     height: 50px;
 }
@@ -37,7 +43,13 @@ p {
     margin-bottom: 30px;
 }
 
-div {
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid {
     box-sizing: border-box;
     border-radius: 3px;
     border: 1px solid red;
@@ -45,11 +57,13 @@ div {
     background-color: #4946f2;
 }
 
-div:hover {
+.grid:hover {
     background-color: red;
 }
 
 .permahover {
     background-color: red;
 }
+
+
 
