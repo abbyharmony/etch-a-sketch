@@ -27,15 +27,14 @@ container.addEventListener('mouseover', e => {
           let randomColor = colors[Math.floor(Math.random() * colors.length)];
           target.style.backgroundColor = randomColor;
       } else {
-          target.style.backgroundColor = "red"; 
+          target.style.backgroundColor = "grey"; 
       }
-      target.classList.add('permahover'); 
   }
 });
 
 //create event listener to choose number of grid squares
-let reset = document.getElementById("reset");
-reset.addEventListener("click", () => {
+let size = document.getElementById("size");
+size.addEventListener("click", () => {
   isRandomized = false;
   let inputVal = prompt("Enter number of squares per side for new grid (max 100)");
   if (inputVal < 1 || inputVal > 100 || isNaN(inputVal)) {
@@ -53,8 +52,21 @@ reset.addEventListener("click", () => {
   }
 });
 
+//create event listener/function for eraser
+let eraser = document.getElementById("eraser");
 
+eraser.addEventListener("click", () => {
+  isRandomized = false;
+  container.addEventListener("mouseover", erase);
+});
 
+function erase(event) {
+  let target = event.target;
+
+  if (target.classList.contains("grid")) {
+    target.style.backgroundColor = "white";
+  }
+}
  
 
 
