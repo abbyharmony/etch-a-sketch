@@ -2,7 +2,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: black;
+    background-color: #b2ede9;
 }
   
 header {
@@ -17,19 +17,25 @@ header {
     font-size: 60px;
 }
 
+.buttons {
+    display: flex;
+    gap: 40px;
+    padding-top: 20px;
+}
+
 p {
-    color: greenyellow;
+    color: white;
+    text-shadow: 2px 2px 8px black;
     margin: 0;
 }
 
-#reset {
+#size, #random, #eraser, #reset {
     width: 100px;
     height: 50px;
-}
-
-#random {
-    width: 100px;
-    height: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+    border-radius: 4px;
+    box-shadow: 3px 2px black, -.1em -0;
 }
 
 .container {
@@ -52,18 +58,11 @@ main {
 .grid {
     box-sizing: border-box;
     border-radius: 3px;
-    border: 1px solid red;
+    border: 1px solid black;
     color: black;
-    background-color: #4946f2;
+    background-color: white;
 }
 
-.grid:hover {
-    background-color: red;
-}
-
-.permahover {
-    background-color: red;
-}
 
 
 
